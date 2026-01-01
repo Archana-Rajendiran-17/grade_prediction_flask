@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Prediction</title>
+</head>
+<body>
+    <h2>Student Grade Prediction</h2>
+
+    <form method="POST">
+        <label>Enter Study Hours:</label><br><br>
+        <input type="number" name="hours" step="0.1" required>
+        <br><br>
+        <button type="submit">Predict Grade</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Score: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
